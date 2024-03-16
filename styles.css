@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black
+}
+.container{
+    margin: 0,2rem;
+}
+.movieSearchSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button{
+    background-color: rgb(47, 255, 158);
+    border-radius: 5px;
+}
+button:hover{
+    background-color: #fff;
+    box-shadow: 0px 2px 5px 5px black;
+}
+
+#search{
+    background-color: rgb(47, 255, 158);
+    border-radius: 5px;
+}
+#search:hover{
+    background-color: #fff;
+    box-shadow: 0px 2px 5px 5px black;
+}
+
+
+.movieSearchSection>*{
+    margin: 1rem 0rem;
+    box-shadow: 0px 0px 8px 6px rgb(171, 107, 107);
+
+}
+.movieCustomizationBar{
+    margin:20px;
+}
+.moviesListing{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
+}
+.movieCard{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(0, 0, 0);
+    width: 10%;
+    border-radius: 5px;
+    height: 400px;
+    width: 200px;
+    color:rgb(47, 255, 158);
+    box-shadow: 0px 0px 3px 3px rgb(171, 107, 107);
+}
+.movieCard>img{
+    height: 250px;
+    width: 100%;
+}
+.movieCard>div{
+    padding: 1rem;
+}
+.movieDetails{
+    display: flex;
+    flex-direction: row;
+}
+.paginationBar{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.prevBtn{
+    margin-right: 5px;
+}
+.nextBtn{
+    margin-left: 5px;
+}
+
+/* Styling of Header */
+
+nav{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color:rgb(47, 255, 158);
+    margin:0;
+    padding:0;
+}
+
+.h1Header{
+    font-size: 30px;
+
+}
+@media(min-width:290px) and (max-width:407px){
+   .btn ,.sortByDate{
+    margin-left: 80px;
+   }
+   .movieCustomizationBar{
+    margin-left: 80px;
+   }
+  
+}
+
